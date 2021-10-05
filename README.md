@@ -18,13 +18,13 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 **Section 2 Git, GitHub and Internet**
 - [x] 2.1 Git & GitHub: What is it and what is it for 
 - [x] 2.2 Git & GitHub: Understanding commands 
-- [ ] 2.3 Internet: Understanding how it works
+- [x] 2.3 Internet: Understanding how it works
 
 **Section 3 Introduction to HTML and CSS**
-- [ ] 3.1 Introduction to HTML and CSS
-- [ ] 3.1 Structure page
-- [ ] 3.2 Firsts steps with CSS
-- [ ] 3.3 Selectors and positions :point_left: *current status*
+- [x] 3.1 Introduction to HTML and CSS
+- [x] 3.1 Structure page
+- [x] 3.2 Firsts steps with CSS
+- [x] 3.3 Selectors and positions :point_left: *current status*
 - [ ] 3.4 Semantic
 - [ ] 3.5 Project Lessons Learned
 
