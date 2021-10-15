@@ -1,0 +1,45 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333333;
+    text-align: center;
+}
+
+div {
+    width: 300px;
+    margin: auto;
+    font-size: 18px;
+}
+
+div:hover {
+    border: blueviolet 5px solid;
+}
+
+div:nth-child(3) {
+    color: red;
+    font-family: cursive;
+}
+
+div:nth-child(4) {
+    color: orange;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+div:nth-child(5) {
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div:nth-child(6) {
+    color: darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div:nth-child(7) {
+    color: lightpink;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div:nth-child(odd) {
+    font-style: italic;
+}
