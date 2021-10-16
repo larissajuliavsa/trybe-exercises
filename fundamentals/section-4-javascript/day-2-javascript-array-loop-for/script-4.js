@@ -8,5 +8,7 @@ for (let index = 0; index <= numbers.length; index++) {
   }
 }
 
+novoNumbers / 2
+
 console.log(novoNumbers); 
 
