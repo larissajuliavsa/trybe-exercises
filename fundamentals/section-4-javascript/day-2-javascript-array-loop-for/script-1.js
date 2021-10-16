@@ -5,8 +5,7 @@ for (let i = 0; i < numbers.length; i++) {
   soma += numbers[i]
 }
 
-
-media = soma / numbers.length
+media = soma / numbers.length;
 
 if (media > 20) {
   console.log("Valor maior que 20")
