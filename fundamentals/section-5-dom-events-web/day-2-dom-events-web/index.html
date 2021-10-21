@@ -60,6 +60,7 @@
       let title = document.createElement('h1');
       title.innerText = 'Exercício 5.2 - JavaScript DOM';
       document.body.appendChild(title);
+      
 
       let mainContent = document.createElement('main');
       mainContent.className = 'main-content';
@@ -74,7 +75,7 @@
 
       let sectionContentTwo = document.createElement('section');
       sectionContentTwo.className = 'left-content';
-      mainContent.appendChild(sectionContentTwo);
+      mainContent.appendChild(sectionContentTwo);      
 
       let sectionContentThree = document.createElement('section');
       sectionContentThree.className = 'right-content';
@@ -87,18 +88,38 @@
 
       let unorderedList = document.createElement('ul');
       sectionContentThree.appendChild(unorderedList);
+
       unorderedListArray = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eigth', 'Nine', 'Ten'];
+
       for (let unList in unorderedListArray) {
         let list = document.createElement('li');
         list.innerHTML = unorderedListArray[unList];
-        unorderedList.appendChild(list);
+        unorderedList.appendChild(list);        
       }
 
       for (let tags = 1; tags < 3; tags += 1); {
-        let tagH = document.createElement('h3');
+        let tagH = document.createElement('h3');        
+        tagH[tags].className = 'description';
         mainContent.appendChild(tagH);
       }
 
+      title.className = 'title';
+
+      function removeSection() {
+        let removeSectionTwo = document.getElementsByClassName('left-content');
+        document.getElementsByTagName('main').removeChild(removeSectionTwo);            
+      }
+      removeSection();     
+
+      sectionContentThree.style.marginRight = "auto";
+      sectionContentOne.style.backgroundColor = "green";      
+
+      function removeLi() {
+        let removeList = document.getElementsByTagName('ul')
+        removeList.removeChild(removeChild.childNodes[8]);
+        removeList.removeChild(removeChild.childNodes[9]);
+      }
+      removeLi();
 
     </script>
     
