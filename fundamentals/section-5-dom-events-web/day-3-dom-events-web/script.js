@@ -69,11 +69,9 @@ function holidayClick() {
 holidayClick();
 
 function fridayButton(fridays) {
-  let daysMonth = document.querySelector('#days');
-  let fridayMonth = document.querySelectorAll('.day friday')
   let divBttnFri = document.querySelector('.buttons-container')
-
   let fridayBttn = document.createElement('button');
+
   fridayBttn.id = 'btn-friday';
   fridayBttn.innerText = fridays
   divBttnFri.appendChild(fridayBttn);
@@ -99,3 +97,76 @@ function fridayClick() {
 }
 
 fridayClick()
+
+function zoomIn() {
+  let daysMonth = document.querySelector('#days');
+
+  daysMonth.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = '25px';
+    event.target.style.fontWeight = '800';
+  })
+};
+
+zoomIn();
+
+function zoomOut() {
+  let daysMonth = document.querySelector('#days');
+
+  daysMonth.addEventListener('mouseout', function(event) {
+    event.target.style.fontWeight = '200';
+    event.target.style.fontSize = '20px';
+  })
+};
+
+zoomOut();
+
+function hobbies(tasks) {
+  let divTasks = document.querySelector('.my-tasks');
+  let spanTasks = document.createElement('span');
+  spanTasks.innerText = tasks;
+  
+  divTasks.appendChild(spanTasks)
+}
+
+hobbies('cozinhar')
+
+
+function captionHobbies(color) {
+  let divTasks = document.querySelector('.my-tasks');
+  let divColor = document.createElement('div');
+
+  divColor.className = 'task';
+  divColor.style.backgroundColor = color;
+
+  divTasks.appendChild(divColor);
+}
+
+captionHobbies('rgb(198, 71, 86)');
+
+function clickHobbies() {
+  let selectedColor = document.getElementsByClassName('task selected');
+  let divColor = document.querySelector('.task');
+
+  divColor.addEventListener('click', function(event) {
+    if (selectedColor.length === 0) {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    }
+  });
+};
+
+clickHobbies();
+
+function hobbiesDays() {
+  let daysColor = document.querySelector('#days')
+  let selectedColor = document.getElementsByClassName('task selected');
+  let divColor = document.querySelector('.task');
+
+  daysColor.addEventListener('click', function(event) {
+    let mainColor = 'rgb(119,119,119)';
+    let newColor = 
+  });
+};
+
+hobbiesDays();

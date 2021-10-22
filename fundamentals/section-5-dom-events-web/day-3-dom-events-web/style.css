@@ -24,17 +24,19 @@ button {
 }
 
 #days {
-  margin: 0;
+  margin: 0;  
+  height: 200px;
 }
 
 #days li {
   color: #777;
   display: inline-block;
   font-size:20px;
-  margin: 5px 0;
+  margin: 5px 0px;
   text-align: center;
   vertical-align: middle;
   width: 13.6%;
+  height: 13.6%;
 }
 
 .input-container {
@@ -77,8 +79,7 @@ label {
   width: 49%;
 }
 
-.my-tasks div {
-  border: 1px solid black;
+.my-tasks div {  
   border-radius: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: inline-block;
