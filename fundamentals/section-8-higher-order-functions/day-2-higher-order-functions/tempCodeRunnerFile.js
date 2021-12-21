@@ -71,38 +71,3 @@ function smallerName() {
   return nameBook;
 }
 console.log(smallerName());
-
-function authorBornIn1947() {
-  return books.find((born) => born.author.birthYear === 1947).author.name;
-}
-console.log(authorBornIn1947());
-
-
-
-function getNamedBook() {
-  return books.find((book) => book.name.length === 26);
-}
-console.log(getNamedBook());
-
-function booksOrderedByReleaseYearDesc() {
-  return books.sort(
-    (releaseA, releaseB) => releaseB.releaseYear - releaseA.releaseYear
-  );
-}
-console.log(booksOrderedByReleaseYearDesc());
-
-function everyoneWasBornOnSecXX() {
-  return books.every((book) =>
-    book.author.birthYear >= 1901 && book.author.birthYear <= 2000
-      ? true
-      : false
-  );
-}
-console.log(everyoneWasBornOnSecXX());
-
-function someBookWasReleaseOnThe80s() {
-  return books.some((book) =>
-    book.releaseYear >= 1980 && book.releaseYear <= 1989 ? true : false
-  );
-}
-console.log(someBookWasReleaseOnThe80s());
