@@ -70,11 +70,13 @@ async function addMaggieSimpson() {
 }
 
 async function main() {
+  const returnCharacters = await simpsonsCharacters();
   const returnSimpsons = await simpsonsId(1);
   const returnFilter = await filterSimpsons();
   const returnFamily = await simpsonsFamily();
   const returnAddNelson = await addNelsonMuntz();
   const returnAddMaggie = await addMaggieSimpson();
+  console.log(returnCharacters);
   console.log(returnSimpsons);
   console.log(returnFilter);
   console.log(returnFamily);
